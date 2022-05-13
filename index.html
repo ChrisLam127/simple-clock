@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Clock</title>
+  </head>
+  <body>
+    <h1>SIMPLE CLOCK</h1>
+
+    <section class="week-days">
+      <h3 class="year">2022</h3>
+
+      <div class="days"></div>
+      <!-- <div class="weeks">Sunday</div>
+        <div class="weeks">Monday</div>
+        <div class="weeks">Tuesday</div>
+        <div class="weeks">Wednesday</div>
+        <div class="weeks">Tursday</div>
+        <div class="weeks">Friday</div>
+        <div class="weeks">Saturday</div> -->
+
+      <div class="time12 active">
+        <span class="hours"></span>
+      </div>
+      <div class="time24">
+        <span class="hours24"></span>
+      </div>
+      <div class="switch">
+        <button class="btn1 btn active">12 Hrs</button>
+        <button class="btn2 btn">24 Hrs</button>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #0f051f;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #00ff97;
+  opacity: 0.7;
+}
+
+.week-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.week-days div {
+  display: flex;
+  color: #8a8a8a;
+  margin-right: 1rem;
+}
+.week-days div .weeks.active {
+  color: #00ff97;
+}
+
+.week-days .time12.active {
+  font-size: 4rem;
+  color: #00ff97;
+  margin-top: 2rem;
+  display: block;
+}
+.week-days .time12 {
+  display: none;
+}
+.week-days .time24 {
+  font-size: 4rem;
+  color: #00ff97;
+  margin-top: 2rem;
+  display: none;
+}
+.week-days .time24.active {
+  display: block;
+}
+
+.week-days .switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.week-days .switch .btn {
+  outline: none;
+  color: #8a8a8a;
+  background: none;
+  font-size: 18px;
+  padding: 0.2rem;
+  cursor: pointer;
+  border: 1px solid #8a8a8a;
+}
+
+.week-days .switch .btn.active {
+  color: #00ff97;
+  border: 1px solid #00ff97;
+}
+/* 
+===============
+Media Query 
+==============*/
+@media (max-width: 800px) {
+  .week-days div {
+    margin-right: 0rem;
+  }
+  .week-days div .weeks {
+    display: none;
+  }
+  .week-days div .weeks.active {
+    display: block;
+    color: #8a8a8a;
+  }
+  .week-days .time12.active {
+    font-size: 3rem;
+  }
+
+  .week-days .time24 {
+    font-size: 3rem;
+  }
+  .week-days .switch .btn {
+    font-size: 15px;
+  }
+}
